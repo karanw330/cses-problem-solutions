@@ -1,0 +1,16 @@
+#include<iostream>
+#include<set>   //using ordered set cz unordered  can give TLE due to hash collisions
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    set<long long> distinct;
+    long long num,x;
+    cin >> num;
+    for(long long i=1;i<=num;i++){
+        cin >> x;
+        distinct.insert(x);
+    }
+    cout <<distinct.size();
+}
